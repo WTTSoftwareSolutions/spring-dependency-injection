@@ -1,6 +1,6 @@
-package com.wttsoftwaresolutions.dependencyinjection.controllers;
+package com.wttsoftwaresolutions.springdependencyinjection.controllers;
 
-import com.wttsoftwaresolutions.dependencyinjection.services.ConstructorGreetingService;
+import com.wttsoftwaresolutions.springdependencyinjection.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

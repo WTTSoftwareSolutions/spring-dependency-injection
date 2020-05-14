@@ -1,4 +1,4 @@
-package com.wttsoftwaresolutions.dependencyinjection.services;
+package com.wttsoftwaresolutions.springdependencyinjection.services;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

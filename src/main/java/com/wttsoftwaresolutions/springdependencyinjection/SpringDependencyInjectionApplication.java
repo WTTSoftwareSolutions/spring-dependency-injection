@@ -1,6 +1,6 @@
-package com.wttsoftwaresolutions.dependencyinjection;
+package com.wttsoftwaresolutions.springdependencyinjection;
 
-import com.wttsoftwaresolutions.dependencyinjection.controllers.*;
+import com.wttsoftwaresolutions.springdependencyinjection.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

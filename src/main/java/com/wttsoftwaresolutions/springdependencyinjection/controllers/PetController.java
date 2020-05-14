@@ -1,6 +1,6 @@
-package com.wttsoftwaresolutions.dependencyinjection.controllers;
+package com.wttsoftwaresolutions.springdependencyinjection.controllers;
 
-import com.wttsoftwaresolutions.dependencyinjection.services.PetService;
+import com.wttsoftwaresolutions.springdependencyinjection.services.PetService;
 import org.springframework.stereotype.Controller;
 
 /**

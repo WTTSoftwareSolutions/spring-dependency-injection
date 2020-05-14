@@ -1,4 +1,4 @@
-package com.wttsoftwaresolutions.dependencyinjection.services;
+package com.wttsoftwaresolutions.springdependencyinjection.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;

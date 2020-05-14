@@ -1,6 +1,6 @@
-package com.wttsoftwaresolutions.dependencyinjection.controllers;
+package com.wttsoftwaresolutions.springdependencyinjection.controllers;
 
-import com.wttsoftwaresolutions.dependencyinjection.services.GreetingService;
+import com.wttsoftwaresolutions.springdependencyinjection.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 /**
