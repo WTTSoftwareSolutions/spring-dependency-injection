@@ -1,23 +1,23 @@
 package com.wttsoftwaresolutions.springdependencyinjection.controllers;
 
-import com.wttsoftwaresolutions.springdependencyinjection.services.ConstructorGreetingService;
-import org.junit.jupiter.api.BeforeEach;
+import com.wttsoftwaresolutions.springdependencyinjection.services.GreetingServiceImpl;
+import org.junit.Before;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.Assert.assertEquals;
 
 class PropertyInjectedControllerTest {
 
-    PropertyInjectedController controller;
+    PropertyInjectedController propertyInjectedController;
 
-    @BeforeEach
-    void setUp() {
-        controller = new PropertyInjectedController();
-
-        controller.greetingService = new ConstructorGreetingService();
+    @Before
+    void setUp() throws Exception {
+        this.propertyInjectedController = new PropertyInjectedController();
+        propertyInjectedController.greetingServiceImpl = new GreetingServiceImpl();
     }
 
     @Test
-    void getGreeting() {
-
-        System.out.println(controller.getGreeting());
+    void testGreeting() throws Exception {
+        assertEquals(GreetingServiceImpl.HELLO_GURUS, propertyInjectedController.sayHello());
     }
 }

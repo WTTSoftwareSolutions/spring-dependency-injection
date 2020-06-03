@@ -4,9 +4,6 @@ import com.wttsoftwaresolutions.springdependencyinjection.services.GreetingServi
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
-/**
- * Created by jt on 12/26/19.
- */
 @Controller
 public class ConstructorInjectedController {
     private final GreetingService greetingService;
@@ -15,7 +12,7 @@ public class ConstructorInjectedController {
         this.greetingService = greetingService;
     }
 
-    public String getGreeting(){
+    public String sayHello() {
         return greetingService.sayGreeting();
     }
 }

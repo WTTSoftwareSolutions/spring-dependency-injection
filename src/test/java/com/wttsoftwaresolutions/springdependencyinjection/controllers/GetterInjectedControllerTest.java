@@ -6,18 +6,18 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
+class GetterInjectedControllerTest {
 
-class ConstructorInjectedControllerTest {
-
-    ConstructorInjectedController constructorInjectedController;
+    GetterInjectedController getterInjectedController;
 
     @Before
     void setUp() throws Exception {
-        this.constructorInjectedController = new ConstructorInjectedController(new GreetingServiceImpl());
+        this.getterInjectedController = new GetterInjectedController();
+        this.getterInjectedController.setGreetingService(new GreetingServiceImpl());
     }
 
     @Test
     void testGreeting() throws Exception {
-        assertEquals(GreetingServiceImpl.HELLO_GURUS, constructorInjectedController.sayHello());
+        assertEquals(GreetingServiceImpl.HELLO_GURUS, getterInjectedController.sayHello());
     }
 }

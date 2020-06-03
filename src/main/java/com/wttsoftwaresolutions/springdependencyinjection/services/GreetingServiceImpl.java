@@ -2,13 +2,13 @@ package com.wttsoftwaresolutions.springdependencyinjection.services;
 
 import org.springframework.stereotype.Service;
 
-/**
- * Created by jt on 12/27/19.
- */
 @Service
-public class SetterInjectedGreetingService implements GreetingService{
+public class GreetingServiceImpl implements GreetingService {
+
+    public static final String HELLO_GURUS = "Hello Gurus!!!! - Original";
+
     @Override
     public String sayGreeting() {
-        return "Hello World - Setter";
+        return HELLO_GURUS;
     }
 }
