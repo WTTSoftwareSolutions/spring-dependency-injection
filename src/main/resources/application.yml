@@ -1,0 +1,11 @@
+wttsoftwaresolutions:
+  jms:
+    username: JMS Yaml Username
+    password: somepass
+    url: SomeUrl
+---
+spring:
+  profiles: de
+wttsoftwaresolutions:
+  jms:
+    username: JMS Username Yaml German
